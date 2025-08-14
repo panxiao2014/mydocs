@@ -1,5 +1,5 @@
 # EC2设置
-EC2上需要把v2ray server端监听的端口号打开。在运行的instance页面，左边选择Network & Security --> Security Groups。选择要使用的Security group ID，点击'Edit inbound rules'。增加一条rule：
+EC2上需要把v2ray server端监听的端口号打开。在运行的instance页面，左边选择*Network & Security --> Security Groups*。选择要使用的Security group ID，点击*Edit inbound rules*。增加一条rule：
 >Type: Custom TCP
 >
 >Port range: 16832
@@ -53,7 +53,7 @@ EC2上需要把v2ray server端监听的端口号打开。在运行的instance页
 ## 安装client
 [https://github.com/v2fly/v2ray-core/releases](https://github.com/2dust/v2rayN/releases)
 
-下载v2rayN-windows-64-SelfContained
+下载*v2rayN-windows-64-SelfContained.zip*
 
 ## 配置client
 运行v2rayN.exe。选择*配置文件 --> 添加[VMess]配置文件*。配置以下内容：
