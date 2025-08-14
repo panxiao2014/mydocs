@@ -67,12 +67,15 @@ EC2上需要把v2ray server端监听的端口号打开。在运行的instance页
 >
 >额外ID：server端配置的alterId
 >
-其他配置保持默认选项。
-
-# 软路由 client设置
-以ShadowSocksR Plus+为例，在节点列表里选择添加，参数配置参照Windows client上的配置，保存该节点即可。
+其他配置保持默认选项。保存该配置。
 
 在*设置 --> 参数设置 --> Core:基础设置*中，可以调整日志等级。
 
 ## 运行client
-在窗口下面，系统代理中，选择'自动配置系统代理'。
+在窗口下面，*系统代理*中，选择*自动配置系统代理*。
+
+# 软路由 client设置
+以ShadowSocksR Plus+为例，在节点列表里选择添加，参数配置参照Windows client上的配置，保存该节点即可。
+
+
+
