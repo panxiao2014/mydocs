@@ -77,5 +77,11 @@ EC2上需要把v2ray server端监听的端口号打开。在运行的instance页
 # 软路由 client设置
 以ShadowSocksR Plus+为例，在节点列表里选择添加，参数配置参照Windows client上的配置，保存该节点即可。
 
+# Tun模式配置
+以上的代理配置只针对浏览器生效。对于命令行窗口的程序不起作用。例如ping google.com，不能成功。这时可以设置Tun模式。在Windows客户端，用管理员身份启动v2rayN，克隆一个VMess文件。编辑该文件，将它的模式从Xray改为sing_box，注意传输协议需要设为tcp。
+
+在*设置 --> 参数设置 --> Core:类型设置*中，同样将VMess改为sing_box模式。接着将新的编辑文件设为活动配置文件，并在窗口最下方启用Tun。这时候观察Windows的*控制面板 --> 网络和共享中心*，会发现多了一个singbox_tun网络。
+
+服务器端如果配置的不是tcp模式，需要将连接模式改为tcp，重启服务。这时在Windows上执行ping google.com，就可以成功了。
 
 
